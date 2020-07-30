@@ -16,9 +16,11 @@ from pyfingerprint.pyfingerprint import PyFingerprint
 ##
 
 ## Tries to initialize the sensor
+from typing_extensions import Final
+
 try:
     f = PyFingerprint('/dev/ttyUSB0', 57600, 0xFFFFFFFF, 0x00000000)
-
+    #f.clearDatabase()
     if ( f.verifyPassword() == False ):
         raise ValueError('The given fingerprint sensor password is wrong!')
 
@@ -68,6 +70,8 @@ try:
     ## Creates a template
     f.createTemplate()
 
+    fing=f.downloadCharacteristics()
+    print("Your finger: "+str(fing))
     ## Saves template at new position number
     positionNumber = f.storeTemplate()
     print('Finger enrolled successfully!')

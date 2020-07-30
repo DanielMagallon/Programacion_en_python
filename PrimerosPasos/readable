@@ -1,3 +1,3 @@
-This text will be read by python
-I hope it works successfully
-I think it will be read line by line
+Part1 = This text will be read by python
+Part2 = I hope it works successfully
+Part3 = I think it will be read line by line

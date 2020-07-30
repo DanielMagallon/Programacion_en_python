@@ -1,0 +1,8 @@
+Introduction: Bash is an sh-compatible command language interpreter that executes
+commands read from the standard input or from a file.
+
+Bash can run most sh scripts without modification. bash-completion is a collection of
+shell functions that take advantage of the programmable completion feature of bash
+on Ubuntu Linux.
+
+This page shows how to install and enable Bash auto completion in Ubuntu Linux.
