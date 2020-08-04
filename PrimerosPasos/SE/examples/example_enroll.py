@@ -70,8 +70,7 @@ try:
     ## Creates a template
     f.createTemplate()
 
-    fing=f.downloadCharacteristics()
-    print("Your finger: "+str(fing))
+
     ## Saves template at new position number
     positionNumber = f.storeTemplate()
     print('Finger enrolled successfully!')

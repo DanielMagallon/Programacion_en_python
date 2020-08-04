@@ -1,6 +1,8 @@
 calificaciones = {"Luis":3,"Manuel":2,1:"Pedro"} #set
 alumnos = ["Juan","Pedro","Daniel","Javier","Lalo"] #list
 
+print(alumnos[0:2])
+
 #Las llaves de rizo {} crean dictionaries o sets. Los corchetes crean lists.
 
 

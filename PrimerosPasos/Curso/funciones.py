@@ -2,7 +2,6 @@ global constantePI, a, x
 constantePI = 3.1415
 
 
-
 def writemsg(st):
     print("Hola " + st)
     global b
