@@ -1,9 +1,17 @@
 import collections
 import builtins
 
+
+
 dict1 = {'a':1,'b':2}
 dict2 = {'b':3,'c':4}
 dict3 = {'f': 5}
+
+ord_dict=collections.OrderedDict()
+ord_dict.update({'one':1})
+ord_dict.update({'two':2})
+ord_dict.update({'eleven':11})
+print(ord_dict)
 
 chain = collections.ChainMap(dict1,dict2)
 

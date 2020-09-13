@@ -9,6 +9,8 @@ mitad,imagen = cv2.threshold(imagen,255/2,255,cv2.THRESH_BINARY)
 
 imgSmaller = ImageTk.PhotoImage(image=Image.fromarray(imagen))
 
-tk.Label(root, image=imgSmaller).pack()
+lbl = tk.Label(root)
+lbl['image']=imgSmaller
+lbl.pack()
 
 root.mainloop()

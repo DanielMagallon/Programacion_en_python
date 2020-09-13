@@ -72,7 +72,7 @@ try:
 
 
     ## Saves template at new position number
-    positionNumber = f.storeTemplate()
+    positionNumber = f.storeTemplate(charBufferNumber=0x02)
     print('Finger enrolled successfully!')
     print('New template position #' + str(positionNumber))
 
