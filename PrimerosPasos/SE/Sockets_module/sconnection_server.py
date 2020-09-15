@@ -62,5 +62,5 @@ def gettingData(data):
     print(ss.nameThread + ": I've gotten: ", data)
 
 
-ss = Socket_sserver("ServerThread", ('localhost', 1234), functionGet=gettingData)
+ss = Socket_sserver("ServerThread", ('192.168.1.10', 2300), functionGet=gettingData)
 ss.start_server()

@@ -4,6 +4,8 @@ import os
 import threading
 import time
 
+import sys
+sys.path.append("..")
 from Sockets_module.sconnection_client import Socket_client,Socket_wait2wait
 #from ..Sockets_module.sconnection_client import Socket_client,Socket_wait2wait
 
@@ -206,7 +208,7 @@ class FPManager(Tk):
         self.btnChekAcces['state'] = 'disabled'
         self.btnChekAcces.grid(row=2,column=1,padx=10,pady=5)
 
-        self.sclient = Socket_client("Thread_client:daniel",('localhost',1234),functionGet=self.getData)
+        self.sclient = Socket_client("Thread_client:daniel",('192.168.1.10',2300),functionGet=self.getData)
 
         self.reader = PyFingerprint('/dev/ttyUSB0', 57600, 0xFFFFFFFF, 0x00000000)
 
@@ -275,7 +277,7 @@ class FPManager(Tk):
 
 
 
-#app = GUI_signup(True)
+#app = GUI_signup(False)
 #app.run()
 
 app = FPManager()
